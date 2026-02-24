@@ -1,23 +1,23 @@
 # PanoEnv: Exploring 3D Spatial Intelligence in Panoramic Environments with Reinforcement Learning
 
 [![Paper](https://img.shields.io/badge/Paper-CVPR%202026-blue)](https://arxiv.org/abs/xxxx.xxxxx)
-[![Dataset](https://img.shields.io/badge/🤗%20Dataset-PanoEnv-yellow)](https://huggingface.co/datasets/7zkk/PanoEnv)
+[![Dataset](https://img.shields.io/badge/Dataset-PanoEnv-yellow)](https://huggingface.co/datasets/7zkk/PanoEnv)
 [![License](https://img.shields.io/badge/License-Apache%202.0-green.svg)](LICENSE)
 
 <p align="center">
   <img src="fig/teaser.png" width="100%">
 </p>
 
-## 🔥 Highlights
+## Highlights
 
 - **PanoEnv-QA**: A large-scale VQA benchmark with 14,827 questions across 5 categories for 360° panoramic spatial reasoning
 - **3D-Aware RL Framework**: GRPO-based post-training with geometry-grounded rewards
 - **Two-Stage Curriculum**: Structured → Mixed training for stable optimization
 - **State-of-the-Art Results**: 52.93% accuracy, +132% improvement on open-ended questions
 
-## 📊 PanoEnv-QA Dataset
+## PanoEnv-QA Dataset
 
-**🤗 Download**: [https://huggingface.co/datasets/7zkk/PanoEnv](https://huggingface.co/datasets/7zkk/PanoEnv)
+**Download**: [https://huggingface.co/datasets/7zkk/PanoEnv](https://huggingface.co/datasets/7zkk/PanoEnv)
 
 | Category | # Questions | Percentage |
 |----------|-------------|------------|
@@ -28,7 +28,7 @@
 | View Source Identification | 2,937 | 19.8% |
 | **Total** | **14,827** | **100%** |
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 panoenv_code/
@@ -57,7 +57,7 @@ panoenv_code/
 │   └── run_scripts/                  # Additional run scripts
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 
@@ -112,7 +112,7 @@ cd code/panoenv/evaluation
 python evaluate_acc_results.py --input <inference_results.jsonl>
 ```
 
-## 📈 Results
+## Results
 
 ### Main Results on PanoEnv-QA
 
@@ -122,7 +122,7 @@ python evaluate_acc_results.py --input <inference_results.jsonl>
 | Qwen2.5-VL-32B | 42.70% | 62.47% | 44.96% | 8.36% | 5.02 | 4.92 |
 | **GRPO-Balanced (Ours)** | **52.93%** | **68.78%** | **58.90%** | **14.83%** | **6.24** | **5.95** |
 
-## 🔧 Configuration
+## Configuration
 
 Key hyperparameters in `run_grpo_tartanair_cloud.sh`:
 
@@ -134,7 +134,7 @@ Key hyperparameters in `run_grpo_tartanair_cloud.sh`:
 | `LORA_R` | 16 | LoRA rank |
 | `BETA` | 0.01 | KL penalty coefficient |
 
-## 📖 Citation
+## Citation
 
 ```bibtex
 @inproceedings{
@@ -145,13 +145,13 @@ Key hyperparameters in `run_grpo_tartanair_cloud.sh`:
 }
 ```
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 - [TartanAir](https://theairlab.org/tartanair-dataset/) for the synthetic 3D environment data
 - [TRL](https://github.com/huggingface/trl) for the GRPO implementation
 - [Qwen2.5-VL](https://github.com/QwenLM/Qwen2-VL) for the base VLM
 - [Hugging Face](https://huggingface.co/) for hosting the dataset
 
-## 📄 License
+## License
 
 This project is licensed under the Apache 2.0 License - see the [LICENSE](LICENSE) file for details.
