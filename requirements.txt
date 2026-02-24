@@ -1,0 +1,30 @@
+# Core dependencies
+torch>=2.1.0
+transformers>=4.45.0
+accelerate>=1.2.1
+datasets>=3.2.0
+trl>=0.12.0
+
+# Training
+deepspeed==0.15.4
+peft>=0.13.0
+bitsandbytes>=0.43.0
+
+# Vision
+Pillow>=10.0.0
+qwen-vl-utils>=0.0.8
+
+# Evaluation
+python-Levenshtein>=0.25.0
+numpy>=1.24.0
+tqdm>=4.66.0
+
+# Logging
+wandb>=0.18.0
+
+# Development
+black>=24.4.2
+ruff>=0.4.5
+
+# Optional: Flash Attention (recommended for faster training)
+# flash-attn>=2.5.0
