@@ -1,4 +1,4 @@
-# PanoEnv: Exploring 3D Spatial Intelligence in Panoramic Environments with Reinforcement Learning
+# CVPR 2026 - PanoEnv: Exploring 3D Spatial Intelligence in Panoramic Environments with Reinforcement Learning
 
 [![Paper](https://img.shields.io/badge/Paper-CVPR%202026-blue)](https://arxiv.org/abs/xxxx.xxxxx)
 [![Dataset](https://img.shields.io/badge/Dataset-PanoEnv-yellow)](https://huggingface.co/datasets/7zkk/PanoEnv)
